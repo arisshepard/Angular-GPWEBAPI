@@ -1,0 +1,29 @@
+<h1>Firmantes</h1>
+<hr />
+<!-- <div class="row">
+  <div class="col text-right">
+    <button routerLink="/heroe/nuevo" class="btn btn-success">
+      <i class="fa fa-plus"></i> Agregar
+    </button>
+  </div>
+</div> -->
+
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Usuario</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let firmante of firmantes; let i = index">
+      <th scope="row">{{ i }}</th>
+      <td>{{ firmante.id }}</td>
+      <td>{{ firmante.nombre }}</td>
+      <td>{{ firmante.usuario }}</td>
+    </tr>
+    <tr></tr>
+  </tbody>
+</table>
